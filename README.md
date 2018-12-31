@@ -24,4 +24,24 @@ If you have installed GoogleTest in a local directory, you have to tell cmake th
 ```terminal
 cmake -DGTEST_ROOT=$HOME/.local ..
 ```
+# How to integrate with IDEs
 
+## Visual Studio
+
+Microsoft provides the procedures of how to integrate CMake projects with Visual Studio [here](https://docs.microsoft.com/en-us/cpp/ide/cmake-tools-for-visual-cpp?view=vs-2017).
+
+## Code::Blocks
+
+```terminal
+mkdir build
+cd build
+cmake -G "CodeBlocks - Unix Makefiles" ..
+```
+
+## Xcode
+
+```terminal
+mkdir build
+cd build
+cmake -G Xcode ..
+```
